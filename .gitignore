@@ -1,0 +1,20 @@
+# Build outputs & binaries (source-only repository)
+build/
+.build/
+.swiftpm/
+DerivedData/
+*.app
+*.dmg
+*.pkg
+*.zip
+*.metallib
+*.air
+*.car
+*.icns
+
+# Xcode / IDE / macOS metadata
+*.xcodeproj/project.xcworkspace/
+*.xcodeproj/xcuserdata/
+xcuserdata/
+.DS_Store
+Thumbs.db

@@ -1,0 +1,231 @@
+{
+  "version": 1,
+  "themes": [
+    {
+      "id": "beach",
+      "adaptive": true,
+      "name": "沙滩",
+      "desc": "海岸线绕着你的文件弯曲，海浪一层层冲上沙滩",
+      "page": "flat.html",
+      "renderer": "metal",
+      "status": "ready",
+      "product": "free",
+      "thumb": "thumbs/beach.webp",
+      "groups": [
+        {
+          "name": "岸线",
+          "params": [
+            {
+              "key": "sigma",
+              "label": "离岸距离",
+              "hint": "海岸线离图标多远",
+              "min": 40,
+              "max": 200,
+              "step": 1,
+              "default": 85,
+              "unit": "px"
+            },
+            {
+              "key": "warp",
+              "label": "海岸曲折",
+              "hint": "岸线弯弯绕绕的程度",
+              "min": 0,
+              "max": 80,
+              "step": 1,
+              "default": 34
+            }
+          ]
+        },
+        {
+          "name": "海水",
+          "params": [
+            {
+              "key": "shoal",
+              "label": "透明浅滩",
+              "hint": "能看见沙底的浅水有多宽",
+              "min": 0,
+              "max": 300,
+              "step": 1,
+              "default": 110,
+              "unit": "px"
+            },
+            {
+              "key": "shallow",
+              "label": "浅海宽度",
+              "hint": "从青绿过渡到深蓝的距离",
+              "min": 120,
+              "max": 700,
+              "step": 1,
+              "default": 260,
+              "unit": "px"
+            }
+          ]
+        },
+        {
+          "name": "元素",
+          "params": [
+            {
+              "key": "palms",
+              "label": "椰子树数量",
+              "hint": "沿岸椰子树的数量，设为 0 可隐藏；沙地不足时会减少显示",
+              "min": 0,
+              "max": 10,
+              "step": 1,
+              "default": 4,
+              "unit": "棵"
+            },
+            {
+              "key": "kayaks",
+              "label": "皮划艇",
+              "min": 0,
+              "max": 4,
+              "step": 1,
+              "default": 2,
+              "unit": "艘"
+            },
+            {
+              "key": "birds",
+              "label": "海鸟",
+              "hint": "在上空滑翔、盘旋的海鸥",
+              "min": 0,
+              "max": 8,
+              "step": 1,
+              "default": 3,
+              "unit": "只"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "meadow",
+      "adaptive": true,
+      "name": "草地",
+      "desc": "钢笔淡彩的草地，图标藏在白云里，云影是一块块深绿",
+      "page": "meadow.html",
+      "renderer": "metal",
+      "status": "ready",
+      "product": "free",
+      "thumb": "thumbs/meadow.webp",
+      "groups": [
+        {
+          "name": "图标周围",
+          "params": [
+            {
+              "key": "sigma",
+              "label": "云团大小",
+              "hint": "图标所在的云从图标往外铺多远",
+              "min": 40,
+              "max": 200,
+              "step": 1,
+              "default": 72,
+              "unit": "px"
+            }
+          ]
+        },
+        {
+          "name": "云",
+          "params": [
+            {
+              "key": "cover",
+              "label": "草地上的云",
+              "hint": "空旷的草地上空零星飘着的云有多少",
+              "min": 0,
+              "max": 1,
+              "step": 0.01,
+              "default": 0.3,
+              "format": "percent"
+            },
+            {
+              "key": "flow",
+              "label": "流动速度",
+              "hint": "云飘多快、云团的鼓包变化多快",
+              "min": 0,
+              "max": 3,
+              "step": 0.05,
+              "default": 1,
+              "format": "times"
+            }
+          ]
+        },
+        {
+          "name": "角色",
+          "params": [
+            {
+              "key": "showBoy",
+              "label": "显示男孩",
+              "hint": "男孩和他手中的风筝一起显示或隐藏",
+              "options": ["隐藏", "显示"],
+              "default": 1
+            },
+            {
+              "key": "showCat",
+              "label": "显示小猫",
+              "hint": "躺在草地上的小黑猫",
+              "options": ["隐藏", "显示"],
+              "default": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "forest",
+      "adaptive": true,
+      "name": "森林",
+      "desc": "图标在林间的空地上，四周长满水粉风的卡通树，风吹得树梢轻轻摇",
+      "page": "forest.html",
+      "renderer": "metal",
+      "status": "ready",
+      "product": "free",
+      "thumb": "thumbs/forest.webp",
+      "groups": [
+        {
+          "name": "图标周围",
+          "params": [
+            {
+              "key": "sigma",
+              "label": "空地大小",
+              "hint": "图标周围林间空地有多大、树离多远",
+              "min": 45,
+              "max": 200,
+              "step": 1,
+              "default": 82,
+              "unit": "px"
+            }
+          ]
+        },
+        {
+          "name": "树木",
+          "params": [
+            {
+              "key": "wind",
+              "label": "风力",
+              "hint": "树梢随风轻轻摇晃的幅度，设为 0 则静止",
+              "min": 0,
+              "max": 2,
+              "step": 0.05,
+              "default": 1.0,
+              "format": "times"
+            }
+          ]
+        },
+        {
+          "name": "元素",
+          "params": [
+            {
+              "key": "birds",
+              "label": "林鸟",
+              "hint": "平时停在树梢上，偶尔飞去邻近的树",
+              "min": 0,
+              "max": 8,
+              "step": 1,
+              "default": 4,
+              "unit": "只"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
