@@ -56,9 +56,13 @@ Colors shift across the day, from rose-gold dawn and turquoise daylight to coral
 
 ![Beach at night](docs/screenshots/beach-night.jpg)
 
+## Download
+
+Download the signed and notarized app from the [latest release](https://github.com/willi/deskland-macos/releases/latest). It runs on Apple Silicon Macs with macOS 27. Unzip it and move Deskland to your Applications folder.
+
 ## Build from source
 
-This repository contains source code only (no prebuilt binaries). Requires macOS 27 and Xcode / Swift 6.2+.
+Requires macOS 27 and Xcode / Swift 6.2+.
 
 ```zsh
 git clone https://github.com/willi/deskland-macos.git
